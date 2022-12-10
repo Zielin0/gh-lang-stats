@@ -8,15 +8,15 @@ Get the most used programming languages on GitHub profile (via [github-readme-st
 $ python ./main.py <username>
 ```
 
-Output (10.12.2022):
+Output (11.12.2022):
 
 ```shell
 $ python ./main.py Zielin0
-Java 34.55%
-JavaScript 32.60%
-HTML 13.42%
-TypeScript 12.39%
-Python 7.05%
+Java 34.24%
+JavaScript 32.31%
+HTML 13.30%
+TypeScript 12.28%
+Python 7.87%
 ```
 
 ## License
