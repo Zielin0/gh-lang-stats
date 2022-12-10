@@ -21,4 +21,4 @@ Python 7.05%
 
 ## License
 
-This project is under the [MIT](./LICENSE).
+This project is under the [MIT](./LICENSE) license.
