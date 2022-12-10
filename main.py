@@ -31,10 +31,12 @@ def main(argv: List[str]) -> None:
         lang_items = group.childNodes[1].childNodes
         lang_items = lang_items[1:len(lang_items) - 1]
 
+        n = 0
         for lang_item in lang_items:
+            n += 1
             lang_name = lang_item.childNodes[1].childNodes[0].nodeValue
             lang_percent = lang_item.childNodes[3].childNodes[0].nodeValue
-            print(f"{lang_name} {lang_percent}")
+            print(f"{n}. {lang_name} {lang_percent}")
 
     doc.unlink()
     os.remove(f"{username}.svg")
