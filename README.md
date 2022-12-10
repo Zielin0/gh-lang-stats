@@ -1,6 +1,6 @@
 # gh-lang-stats
 
-Get the most used programming languages on GitHub (via [github-readme-stats](https://github.com/anuraghazra/github-readme-stats#top-languages-card) API) and print it into the terminal.
+Get the most used programming languages on GitHub profile (via [github-readme-stats](https://github.com/anuraghazra/github-readme-stats#top-languages-card) API) and print it into the terminal.
 
 ## Quick start
 
