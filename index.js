@@ -17,7 +17,7 @@ async function get_svg(username) {
 function main(argv) {
   argv = argv.splice(2, argv.length);
   if (argv.length != 1) {
-    console.error('ERROR: Provide a github username.\nRun: `python ./main.py Zielin0`');
+    console.error('ERROR: Provide a github username.\nRun: `node ./index.js Zielin0`');
   }
   const username = argv[0];
 
