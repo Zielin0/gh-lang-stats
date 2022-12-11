@@ -31,6 +31,8 @@ def main(argv: List[str]) -> None:
         lang_items = group.childNodes[1].childNodes
         lang_items = lang_items[1:len(lang_items) - 1]
 
+        print(f"{username}'s Top Languages:")
+
         n = 0
         for lang_item in lang_items:
             n += 1
