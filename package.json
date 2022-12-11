@@ -1,0 +1,24 @@
+{
+  "name": "gh-lang-stats",
+  "version": "1.0.0",
+  "description": "Get the most used programming languages on GitHub profile.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js Zielin0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zielin0/gh-lang-stats.git"
+  },
+  "author": "Zielin0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zielin0/gh-lang-stats/issues"
+  },
+  "homepage": "https://github.com/Zielin0/gh-lang-stats#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0",
+    "xml2js": "^0.4.23"
+  }
+}
