@@ -8,6 +8,10 @@ import requests
 URL = "https://github-readme-stats.vercel.app/api/top-langs/?username="
 
 
+def user_exists(username: str) -> bool:
+    return requests.get(f"https://api.github.com/users/{username}").status_code == 200
+
+
 def save_svg(username: str) -> str:
     with open(f"{username}.svg", "w") as f:
         f.write(requests.get(f"{URL}{username}").text)
@@ -19,6 +23,10 @@ def main(argv: List[str]) -> None:
         print("ERROR: Provide a github username.\nRun: `python ./main.py Zielin0`")
         exit(1)
     username = argv[0]
+
+    if not user_exists(username):
+        print(f"ERROR: User '{username}' doesn't exist.")
+        exit(1)
 
     save_svg(username)
     doc = minidom.parse(f"{username}.svg")
