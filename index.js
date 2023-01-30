@@ -6,7 +6,7 @@
 import fetch from 'node-fetch';
 import { parseString } from 'xml2js';
 
-const URL = 'https://github-readme-stats.vercel.app/api/top-langs/?username=';
+const URL = 'https://github-readme-stats-zielino.vercel.app/api/top-langs/?username=';
 
 async function user_exists(username) {
   const resp = await fetch(`https://api.github.com/users/${username}`);
@@ -45,8 +45,8 @@ function main(argv) {
 
       for (let lang of langs) {
         n++;
-        const langName = lang['text'][0]['_'];
-        const langPercent = lang['text'][1]['_'];
+        const langName = lang['g'][0]['text'][0]['_'];
+        const langPercent = lang['g'][0]['text'][1]['_'];
         console.log(`${n}. ${langName} ${langPercent}`);
       }
     });
