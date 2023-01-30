@@ -5,7 +5,7 @@ from xml.dom import minidom
 
 import requests
 
-URL = "https://github-readme-stats.vercel.app/api/top-langs/?username="
+URL = "https://github-readme-stats-zielino.vercel.app/api/top-langs/?username="
 
 
 def user_exists(username: str) -> bool:
@@ -44,8 +44,8 @@ def main(argv: List[str]) -> None:
         n = 0
         for lang_item in lang_items:
             n += 1
-            lang_name = lang_item.childNodes[1].childNodes[0].nodeValue
-            lang_percent = lang_item.childNodes[3].childNodes[0].nodeValue
+            lang_name = lang_item.childNodes[1].childNodes[1].childNodes[0].nodeValue
+            lang_percent = lang_item.childNodes[1].childNodes[3].childNodes[0].nodeValue
             print(f"{n}. {lang_name} {lang_percent}")
 
     doc.unlink()
